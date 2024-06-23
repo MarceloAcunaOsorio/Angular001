@@ -10,7 +10,7 @@ import { MenuComponent } from './component/menu/menu.component';
     MenuComponent
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'Venta Angular001';

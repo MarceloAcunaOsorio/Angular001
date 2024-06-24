@@ -1,11 +1,6 @@
-/*cambiar estilo al pie de pagina*/
-.footer{
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
     background-color: #4A235A;
-    height:auto;
-    line-height:50px;
-    text-align:center;
-    position:auto absolute;
-    bottom:0;
-    left:0;
-    width:100%;
-}
+  }

@@ -32,7 +32,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Fecha Nacimiento</label>
-                    <input type="date" class="form-control" [min]="fechaStrMinima" [max]="fechaStrMaxima" formControlName="FechaNac" [class.is-invalid]="f.FechaNac.errors && f.FechaNac.touched" id="exampleFormControlInput1" placeholder="Ingresar">
+                    <input type="date" class="form-control"  formControlName="FechaNac" [class.is-invalid]="f.FechaNac.errors && f.FechaNac.touched" id="exampleFormControlInput1" placeholder="Ingresar">
                     <div id="validationServerUserNameFeedback" class="invalid-feedback">
                         Fecha Nacimiento Obligatoria
                    </div>

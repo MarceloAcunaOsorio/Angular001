@@ -1,24 +1,20 @@
-import { DatePipe } from '@angular/common';
+
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-registrar',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule,DatePipe],
+  imports: [FormsModule, ReactiveFormsModule],
   templateUrl: './registrar.component.html',
   styleUrl: './registrar.component.css'
 })
 export class RegistrarComponent implements OnInit {
 
-  fechaMinima:Date = new Date();
-  fechaMaxima: Date = new Date();
 
-  fechaStrMinima:string =  '';
-  fechaStrMaxima:string  = '';
   
   public myFormRegistrar!: FormGroup;
-  constructor(private fb: FormBuilder ,private pd:DatePipe) {
+  constructor(private fb: FormBuilder) {
   
    }
 
@@ -27,10 +23,7 @@ export class RegistrarComponent implements OnInit {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
     this.myFormRegistrar = this.createMyFormRegistrar();
-    this.fechaMaxima = new Date(new Date().getFullYear()-18, new Date().getMonth(), new Date().getDay());
-    this.fechaStrMaxima = this.pd.transform(this.fechaMaxima,"yyyy-MM-dd");
-    this.fechaMinima = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDay());
-    this.fechaStrMinima = this.pd.transform(this.fechaMinima,"yyyy-MM-dd");
+
   }
 
 

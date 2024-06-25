@@ -40,7 +40,7 @@ export class PruebasUnitariasComponent {
       console.log("Usuario: " + this.miFormulario.get('usuario')!.value);
       console.log("Email: " + this.miFormulario.get('correo')!.value);
       console.log("Fecha Nacimiento: " + this.miFormulario.get('fechanac')!.value);
-      console.log("Direccion: " + this.miFormulario.get('Direccion')!.value);
+      console.log("Direccion: " + this.miFormulario.get('direccion')!.value);
     }
   }
 

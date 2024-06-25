@@ -18,5 +18,5 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Sneakers';
+  title = 'Pro_Angular001';
 }

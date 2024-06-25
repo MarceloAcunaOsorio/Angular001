@@ -30,12 +30,13 @@ export class RegistrarComponent implements OnInit {
   //metodo
   private createMyFormRegistrar(): FormGroup {
     return this.fb.group({
-      nombre: ['', [Validators.required,Validators.minLength(6),Validators.maxLength(20)]],
-      usuario: ['', [Validators.required,Validators.minLength(3),Validators.maxLength(10)]],
-      password1: ['', [Validators.required,Validators.minLength(6),Validators.maxLength(18)]],
-      password2: ['', [Validators.required,Validators.minLength(6),Validators.maxLength(18)]],
-      FechaNac: ['', [Validators.required]],
-      Direccion: [''],
+      nombre    : ['', [Validators.required,Validators.minLength(6),Validators.maxLength(20)]],
+      usuario   : ['', [Validators.required,Validators.minLength(3),Validators.maxLength(10)]],
+      email     : ['', [Validators.required,Validators.email]],
+      password1 : ['', [Validators.required,Validators.minLength(6),Validators.maxLength(18)]],
+      password2 : ['', [Validators.required,Validators.minLength(6),Validators.maxLength(18)]],
+      FechaNac  : ['', [Validators.required]],
+      Direccion : [''],
     });
   }
 

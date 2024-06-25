@@ -33,7 +33,7 @@ describe('PruebasUnitariasComponent', () => {
       expect(component.miFormulario.get('email')).toBeDefined();
       expect(component.miFormulario.get('password1')).toBeDefined();
       expect(component.miFormulario.get('password2')).toBeDefined();
-      expect(component.miFormulario.get('fecha_nac')).toBeDefined();
+      expect(component.miFormulario.get('fechanac')).toBeDefined();
       expect(component.miFormulario.get('direccion')).toBeDefined();
     })
 
@@ -46,7 +46,7 @@ describe('PruebasUnitariasComponent', () => {
         const emailControl = component.miFormulario.get('email');
         const password1Control = component.miFormulario.get('password1');
         const password2Control = component.miFormulario.get('password2');
-        const fechanacControl = component.miFormulario.get('fecha_nac');
+        const fechanacControl = component.miFormulario.get('fechanac');
         const direccionControl = component.miFormulario.get('direccion');
     
         expect(nombreControl?.invalid).toBeTruthy();
@@ -84,7 +84,7 @@ describe('PruebasUnitariasComponent', () => {
           const emailControl = component.miFormulario.get('email');
           const password1Control = component.miFormulario.get('password1');
           const password2Control = component.miFormulario.get('password2');
-          const fechanacControl = component.miFormulario.get('fecha_nac');
+          const fechanacControl = component.miFormulario.get('fechanac');
           const direccionControl = component.miFormulario.get('direccion');
       
       

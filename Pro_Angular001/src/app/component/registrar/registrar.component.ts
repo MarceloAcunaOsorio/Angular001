@@ -27,7 +27,13 @@ export class RegistrarComponent implements OnInit {
   }
 
 
-  //metodo
+/**
+ * @description
+ * 
+ * metodo para validar que los campos del formulario esten segun solicitado por cliente
+ * todos los campos excepto la direccion son requeridos
+ * el nombre y usuario estan validado con ciertas cantidades minimas y maximas de caracteres al igual que las contraseñas
+ */
   private createMyFormRegistrar(): FormGroup {
     return this.fb.group({
       nombre    : ['', [Validators.required,Validators.minLength(6),Validators.maxLength(20)]],
@@ -57,6 +63,24 @@ export class RegistrarComponent implements OnInit {
 
 
 
+/**
+ * @description
+ * funcion para limpiar los imput del formulario de registro
+ */
+
+
+  limpiarFormulario()
+  {
+    this.myFormRegistrar.patchValue({
+      nombre:'',
+      usuario:'',
+      email :'',
+      password1:'',
+      password2:'',
+      FechaNac:'1900-01-01',
+      Direccion:''
+    })
+  }
   
 
 

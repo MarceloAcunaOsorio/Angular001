@@ -4,52 +4,67 @@
             <div class="col">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" formControlName="nombre" [class.is-invalid]="f.nombre.errors && f.nombre.touched" id="exampleFormControlInput1" placeholder="Ingresa tu Nombre">
+                    <input type="text" class="form-control" formControlName="nombre"
+                        [class.is-invalid]="f.nombre.errors && f.nombre.touched" id="exampleFormControlInput1"
+                        placeholder="Ingresa tu Nombre">
                     <div id="validationServerUserNameFeedback" class="invalid-feedback">
                         Nombre Obligatorio
-                   </div>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Usuario</label>
-                    <input type="text" class="form-control" formControlName="usuario" [class.is-invalid]="f.usuario.errors && f.usuario.touched" id="exampleFormControlInput1" placeholder="Ingresa tu Usuario">
+                    <input type="text" class="form-control" formControlName="usuario"
+                        [class.is-invalid]="f.usuario.errors && f.usuario.touched" id="exampleFormControlInput1"
+                        placeholder="Ingresa tu Usuario">
                     <div id="validationServerUserNameFeedback" class="invalid-feedback">
                         Usuario Obligatorio
-                   </div>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control" formControlName="email" [class.is-invalid]="f.email.errors && f.email.touched" id="exampleFormControlInput1" placeholder="Ingresa tu Email">
+                    <input type="email" class="form-control" formControlName="email"
+                        [class.is-invalid]="f.email.errors && f.email.touched" id="exampleFormControlInput1"
+                        placeholder="Ingresa tu Email">
                     <div id="validationServerUserNameFeedback" class="invalid-feedback">
                         Email Obligatorio
-                   </div>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" formControlName="password1" [class.is-invalid]="f.password1.errors && f.password1.touched" id="exampleFormControlInput1" placeholder="Ingresa tu Password">
+                    <input type="password" class="form-control" formControlName="password1"
+                        [class.is-invalid]="f.password1.errors && f.password1.touched" id="exampleFormControlInput1"
+                        placeholder="Ingresa tu Password">
                     <div id="validationServerUserNameFeedback" class="invalid-feedback">
                         Contraseña Obligatoria
-                   </div>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" formControlName="password2" [class.is-invalid]="f.password2.errors && f.password2.touched" id="exampleFormControlInput1" placeholder="Ingresa tu Password">
+                    <input type="password" class="form-control" formControlName="password2"
+                        [class.is-invalid]="f.password2.errors && f.password2.touched" id="exampleFormControlInput1"
+                        placeholder="Ingresa tu Password">
                     <div id="validationServerUserNameFeedback" class="invalid-feedback">
                         Contraseña no coninciden
-                   </div>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Fecha Nacimiento</label>
-                    <input type="date" class="form-control"  formControlName="FechaNac" [class.is-invalid]="f.FechaNac.errors && f.FechaNac.touched" id="exampleFormControlInput1" placeholder="Ingresar">
+                    <input type="date" class="form-control" formControlName="FechaNac"
+                        [class.is-invalid]="f.FechaNac.errors && f.FechaNac.touched" id="exampleFormControlInput1"
+                        placeholder="Ingresar">
                     <div id="validationServerUserNameFeedback" class="invalid-feedback">
                         Fecha Nacimiento Obligatoria
-                   </div>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">direccion</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingresar tu Dirección">
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Ingresar tu Dirección">
                 </div>
-                <div class="mb-3">
-                   <button class="btn btn-primary">Crear</button>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                    <button class="btn btn-lg btn-primary">Crear</button>
+                    <button class="btn btn-secondary btn-lg" (click)="limpiarFormulario()">Limpiar</button>
                 </div>
             </div>
         </div>
